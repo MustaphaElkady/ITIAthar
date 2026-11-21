@@ -11,8 +11,6 @@ class Book:
         self.authors = authors
         self.publisher = publisher
 
-
-
     @classmethod
     def from_api_data(cls, item):
         info = item.get("volumeInfo", {})
